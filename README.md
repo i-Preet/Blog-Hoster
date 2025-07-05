@@ -71,16 +71,16 @@ You can view the deployed application at:
 
 ## Screenshots
 
-Landing Page
+### Landing Page
 ![image](https://github.com/user-attachments/assets/b10f2eda-753b-4feb-a86b-1938799ce388)
 
-All Posts
+### All Posts
 ![image](https://github.com/user-attachments/assets/99df0309-0619-496c-9e1c-931781c3e99b)
 
-Personal Dashboard
+### Personal Dashboard
 ![image](https://github.com/user-attachments/assets/b05024ed-5213-46c9-a4a5-5f41268c47d5)
 
-Write and Post your Blog
+### Write and Post your Blog
 ![image](https://github.com/user-attachments/assets/a457a6be-6115-4963-9789-11bcf3384d12)
 
 

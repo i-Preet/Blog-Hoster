@@ -1,0 +1,26 @@
+<%- include("header.ejs") %>
+
+<h1>Blog Posts</h1>
+<% if (posts.length > 0) { %>
+    <ul>
+        <% posts.forEach(function(post) { %>
+            <li>
+                <h3><%= post.title %></h3>
+                <p><%= post.content %></p>
+                <p>
+                    <small>Posted on: <%= new Date(post.created_at).toLocaleDateString() %> by <%= user.name %></small>
+                    <% if (post.edited) { %><span class="text-muted"> • edited</span><% } %>
+                </p>
+                <% if (userId && post.user_id === userId) { %>
+                    <form action="/delete/<%= post.id %>" method="POST" class="d-inline">
+                        <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                    </form>
+                <% } %>
+            </li>
+        <% }) %>
+    </ul>
+<% } else { %>
+    <p>No posts available. <a href="/postnew">Create a new post</a>.</p>
+<% } %>
+
+<%- include("footer.ejs") %>

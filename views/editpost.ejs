@@ -1,0 +1,19 @@
+<%- include("header.ejs") %>
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Edit Post</h2>
+  <form method="POST" action="/edit/<%= post.id %>" class="mx-auto" style="max-width: 600px;">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" id="title" name="title" value="<%= post.title %>" class="form-control" required />
+    </div>
+    <div class="mb-3">
+      <label for="content" class="form-label">Content</label>
+      <textarea id="content" name="content" rows="6" class="form-control" required><%= post.content %></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a href="/dashboard" class="btn btn-secondary ms-2">Cancel</a>
+  </form>
+</div>
+
+<%- include("footer.ejs") %>

@@ -1,0 +1,23 @@
+<%- include("header.ejs") %>
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Posts by <%= authorName %></h2>
+  
+  <% if (posts.length > 0) { %>
+    <ul class="list-unstyled">
+      <% posts.forEach(post => { %>
+        <li class="border p-3 mb-3 rounded bg-light text-start">
+          <h4><%= post.title %></h4>
+          <p><%= post.content.length > 300 ? post.content.substring(0, 300) + "..." : post.content %></p>
+          <p><small>Posted on <%= new Date(post.created_at).toLocaleDateString() %></small></p>
+        </li>
+      <% }); %>
+    </ul>
+  <% } else { %>
+    <p class="text-muted">This user hasn't posted anything yet.</p>
+  <% } %>
+</div>
+
+<%- include("footer.ejs") %>
+
+    

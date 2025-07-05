@@ -1,0 +1,20 @@
+<%- include("header.ejs") %>
+
+<div class="text-center">
+  <h2>Register</h2>
+  <form method="POST" action="/register" class="mx-auto" style="max-width: 400px;">
+    <div class="mb-3">
+      <input name="name" type="text" class="form-control" placeholder="Full Name" required />
+    </div>
+    <div class="mb-3">
+      <input name="email" type="email" class="form-control" placeholder="Email" required />
+    </div>
+    <div class="mb-3">
+      <input name="password" type="password" class="form-control" placeholder="Password" required />
+    </div>
+    <button type="submit" class="btn btn-success">Register</button>
+    <p class="mt-3">Already have an account? <a href="/login">Login here</a>.</p>
+  </form>
+</div>
+
+<%- include("footer.ejs") %>

@@ -1,0 +1,29 @@
+<%- include("header.ejs") %>
+
+<h1>Create a New Post</h1>
+<p>Fill out the form below to create a new blog post.</p>
+
+<form action="/post" method="POST">
+  <div class="mb-3">
+    <input 
+      type="text" 
+      name="title" 
+      placeholder="Title" 
+      class="form-control" 
+      required>
+  </div>
+
+  <div class="mb-3">
+    <textarea 
+      name="content" 
+      placeholder="Write your post here..." 
+      class="form-control" 
+      rows="6" 
+      required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Create Post</button>
+</form>
+
+
+<%- include("footer.ejs") %>

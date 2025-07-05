@@ -1,0 +1,31 @@
+<!-- dashboard.ejs -->
+<%- include("header.ejs") %>
+
+<div class="text-center">
+    <h1>Your Dashboard</h1>
+    <p>Manage all your blog posts here.</p>
+
+    <% if (posts && posts.length > 0) { %>
+        <ul class="list-unstyled">
+            <% posts.forEach(function(post) { %>
+                <li class="border p-3 mb-3 rounded bg-light text-start">
+                    <h3><%= post.title %></h3>
+                    <p><%= post.content %></p>
+                    <p>
+                        <small>Posted on: <%= new Date(post.created_at).toLocaleDateString() %> by <%= user.name %></small>
+                        <% if (post.edited) { %><span class="text-muted"> • edited</span><% } %>
+                    </p>
+                    <form action="/delete/<%= post.id %>" method="POST" class="d-inline">
+                        <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                        <a href="/edit/<%= post.id %>" class="btn btn-sm btn-warning me-2">Edit</a>
+
+                    </form>
+                </li>
+            <% }); %>
+        </ul>
+    <% } else { %>
+        <p>You haven't posted anything yet. <a href="/postnew">Create your first post</a>!</p>
+    <% } %>
+</div>
+
+<%- include("footer.ejs") %>

@@ -1,0 +1,28 @@
+<%- include("header.ejs") %>
+
+<div class="container mt-4">
+  <h2 class="text-center">👤 Profile</h2>
+  <div class="card mx-auto mb-4" style="max-width: 500px;">
+    <div class="card-body text-center">
+      <img src="/profile-2398783_1280.jpg" alt="Profile" width="80" height="80" class="rounded-circle mb-3" onerror="this.src='/default-profile.png'">
+      <h4><%= user.name %></h4>
+      <p class="text-muted"><%= user.email %></p>
+    </div>
+  </div>
+
+  <h4>Your Posts</h4>
+  <% if (posts.length > 0) { %>
+    <ul class="list-group">
+      <% posts.forEach(post => { %>
+        <li class="list-group-item">
+          <strong><%= post.title %></strong><br>
+          <small class="text-muted">Posted on <%= new Date(post.created_at).toLocaleDateString() %></small>
+        </li>
+      <% }) %>
+    </ul>
+  <% } else { %>
+    <p class="text-muted">No posts yet.</p>
+  <% } %>
+</div>
+
+<%- include("footer.ejs") %>

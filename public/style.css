@@ -1,0 +1,139 @@
+
+.quirky-font {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+    color: #ff4081; /* Optional: adds a fun color */
+}
+
+a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+li.bg-light {
+    transition: box-shadow 0.3s ease;
+}
+li.bg-light:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    margin: 0;
+}
+
+h1, h2 {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+ul {
+    padding: 0;
+}
+
+li.bg-light {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.2s ease;
+}
+
+li.bg-light:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+li h3 {
+    font-family: 'Caveat', cursive;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+img {
+    border-radius: 12px;
+    margin: 20px 0;
+}
+.greeting-box {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem; /* Adjust size here if you want it larger */
+    padding: 20px 30px;
+    margin: 30px auto;
+    border-radius: 12px;
+    border: 2px dashed #ccc;
+    max-width: 600px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .greeting-box:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+    border-color: var(--accent-color);
+  }
+
+  .read-more, .read-less {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .dropdown-menu {
+    z-index: 9999;
+  }
+  
+  

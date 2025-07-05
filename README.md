@@ -70,8 +70,9 @@ You can view the deployed application at:
 [Blog Hoster](https://bloghoster.onrender.com)
 
 ## Screenshots
-Landing Page
 
+Landing Page
+![image](https://github.com/user-attachments/assets/b10f2eda-753b-4feb-a86b-1938799ce388)
 
 All Posts
 ![image](https://github.com/user-attachments/assets/99df0309-0619-496c-9e1c-931781c3e99b)

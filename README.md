@@ -46,7 +46,7 @@ and view a list of all public blogs. The application is built using Node.js, Exp
 
 ### 1. Clone the Repository
 bash
-git clone https://github.com/your-username/bloghoster.git
+git clone https://github.com/i-Preet/Blog-Hoster
 cd bloghoster
 
 ### 2. Install Dependencies
@@ -68,6 +68,20 @@ Visit http://localhost:3000
 ## Live Deployment
 You can view the deployed application at:
 [Blog Hoster](https://bloghoster.onrender.com)
+
+## Screenshots
+Landing Page
+
+
+All Posts
+![image](https://github.com/user-attachments/assets/99df0309-0619-496c-9e1c-931781c3e99b)
+
+Personal Dashboard
+![image](https://github.com/user-attachments/assets/b05024ed-5213-46c9-a4a5-5f41268c47d5)
+
+Write and Post your Blog
+![image](https://github.com/user-attachments/assets/a457a6be-6115-4963-9789-11bcf3384d12)
+
 
 ## Future Improvements
 Comment system
